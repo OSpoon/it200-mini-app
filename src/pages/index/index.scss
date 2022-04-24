@@ -1,0 +1,57 @@
+.articleContainer {
+  padding: 32rpx;
+  .articleTitle {
+    font-weight: 700;
+    font-size: 32rpx;
+    line-height: 32rpx;
+    color: #1d2129;
+    word-break: break-all;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .articleCoverAndDescribe {
+    display: flex;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    align-items: center;
+    .articleDescribe {
+      flex: 3;
+      color: #4e5969;
+      font-size: 24rpx;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      word-break: break-all;
+      // postcss-loader 默认编译的时候，会过滤 -webkit-box-orient: vertical;
+      /* autoprefixer: off */
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on */
+    }
+    .articleCover {
+      flex: 2;
+      margin-left: 16rpx;
+      width: 238rpx;
+      height: 148rpx;
+    }
+  }
+  .articleFoot {
+    color: rgb(180, 177, 177);
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.action-bar {
+  display: flex;
+}
+.preview-area {
+  width: 80%;
+  min-height: 800px;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #cccccc;
+}
+.text {
+  line-height: 800px;
+}
